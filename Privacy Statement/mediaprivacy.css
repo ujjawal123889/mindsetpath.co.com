@@ -1,0 +1,185 @@
+/* Responsive styles */
+
+/* General mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        margin: 0;
+        height: 50vh;
+        margin-bottom: 5px;
+        width: 100%;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    .header__menu-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .header__button {
+        margin: 600px ;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+    
+    .header__menu.active {
+        display: flex;
+    }
+}
+
+/* For screens larger than 768px (Tablets, Laptops, Desktops) */
+@media screen and (min-width: 769px) {
+    .header__menu {
+        display: flex;
+        justify-content: space-around;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+
+    .header__menu-item {
+        margin-right: 50px;
+        text-align: left;
+    }
+
+    .header__burger {
+        display: none; /* Hide the burger icon */
+    }
+
+    .header__button {
+        margin: 0;
+    }
+}
+
+/* Additional breakpoints for larger screens */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* For larger desktops (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .header__menu-item {
+        margin-right: 70px;
+    }
+
+    .header__button {
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media screen and (min-width:0px) {
+    .header__burger {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header__burger {
+        margin-left: 150px;
+    }
+
+    .containerp {
+        position: absolute;
+        margin-left: 30px;
+    }
+
+    .containerp0 {
+        margin: 200px;
+        position: relative;
+        margin: 0;
+        margin-top: 300px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:375px) {
+    .header__burger {
+        margin-left: 200px;
+    }
+
+    .containerp {
+        position: absolute;
+        margin-left: 40px;
+    }
+
+    .containerp0 {
+        margin: 200px;
+        position: relative;
+        margin: 0;
+        margin-top: 300px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width:425px) {
+    .header__burger {
+        margin-left: 250px;
+    }
+
+    .containerp {
+        position: absolute;
+        margin-left: 50px;
+    }
+
+    .containerp0 {
+        margin: 200px;
+        position: relative;
+        margin: 0;
+        margin-top: 300px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header__burger {
+        margin-left: 600px;
+    }
+
+    .containerp {
+        position: absolute;
+        margin-left: 90px;
+    }
+
+    .containerp0 {
+        margin: 200px;
+        position: relative;
+        margin: 0;
+        margin-top: 300px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        width: 90%;
+        padding: 0;
+    }
+}

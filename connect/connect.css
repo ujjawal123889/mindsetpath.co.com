@@ -1,0 +1,307 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+.header {
+    background-color: #000000;
+    padding: 5px;
+    border-bottom: 2px solid #232121;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__mob {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 50px;
+}
+
+.header__logo-img {
+    width: 80px;
+    height: 30px;
+}
+
+.header__logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.header__burger span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 130px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+.header__menu-item {
+    margin-right: 80px;
+    position: relative;
+}
+
+.header__menu-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+.header__menu-item a:hover {
+    color: #f00;
+}
+
+.header__button {
+    background-color: rgb(48, 94, 0);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.header__button:hover {
+    background-color: rgb(102, 187, 11);
+}
+
+.connect-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 60px auto;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.infoconnect {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.infoconnecth1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.connectinfoconnecth1button {
+    background-color: #c9c8c8;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.connectinfoconnecth1button:hover {
+    background-color: #ffffff;
+}
+
+/* Responsive styles */
+
+/* General mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        margin: 0;
+        height: 50vh;
+        margin-bottom: 5px;
+        width: 100%;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    .header__menu-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .header__button {
+        margin: 600px ;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+    
+    .header__menu.active {
+        display: flex;
+    }
+}
+
+/* For screens larger than 768px (Tablets, Laptops, Desktops) */
+@media screen and (min-width: 769px) {
+    .header__menu {
+        display: flex;
+        justify-content: space-around;
+        background-color: transparent;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+
+    .header__menu-item {
+        margin-right: 50px;
+        text-align: left;
+    }
+
+    .header__burger {
+        display: none; /* Hide the burger icon */
+    }
+
+    .header__button {
+        margin: 0;
+    }
+}
+
+/* Additional breakpoints for larger screens */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* For larger desktops (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .header__menu-item {
+        margin-right: 70px;
+    }
+
+    .header__button {
+        padding: 0.7rem 2rem;
+    }
+}
+
+@media screen and (min-width:0px) {
+    .header__burger {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header__burger {
+        margin-left: 15px;
+    }
+
+    .footer {
+        padding: 20px;
+        margin: 0;
+        width: 300px;
+    }
+
+    .footer {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:375px) {
+    .header__burger {
+        margin-left: 70px;
+    }
+
+    .footer {
+        padding: 20px;
+        margin: 0;
+        width: 300px;
+    }
+
+    .footer {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .header__burger {
+        margin-left: 120px;
+    }
+
+    .footer {
+        padding: 20px;
+        margin: 0;
+        width: 300px;
+    }
+
+    .footer {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header__burger {
+        margin-left: 470px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="mediafeedback.css">
+  <script src="feedback.js"></script>
+</head>
+<body>
+
+  <div class="background-image-container">
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmkxYjFma2U4eGhlNW5tYml5eG9taWUzdDV5anFlNzRpMXZyangwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8RPrFSYYUIcCQLL79X/giphy.webp" alt="effect" class="background-image">
+  </div>
+  
+  <div class="popup">
+    <div>
+      <a class="close-button" href="/index.html"></a>
+    </div>
+
+    <form id="feedback-form">
+      <h2>Share your experience</h2>
+      <p>Please tell us about your experience. Your feedback helps us improve.</p>
+      
+      <div class="rating">
+        <span class="star filled"></span>
+        <span class="star filled"></span>
+        <span class="star filled"></span>
+        <span class="star filled"></span>
+        <span class="star empty"></span>
+      </div>
+      
+      <textarea id="message" placeholder="Review *" required></textarea>
+      <input type="text" id="first_name" placeholder="First and last name *" required />
+      <input type="email" id="email" placeholder="Email *" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

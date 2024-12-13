@@ -1,0 +1,60 @@
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .popup {
+      width: 300px;
+    }
+
+    textarea {
+        width: 95%;
+      }
+      
+      input {
+        width: 95%;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .popup {
+      width: 250px;
+    }
+    .rating {
+      flex-direction: column;
+      align-items: center;
+    }
+    .rating .star {
+      margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 95%;
+      }
+      
+      input {
+        width: 95%;
+      }
+  }
+  
+  @media (max-width: 320px) {
+    .popup {
+      width: 200px;
+    }
+    textarea {
+      height: 80px;
+    }
+    input {
+      padding: 5px;
+    }
+    button {
+      padding: 5px 
+    }
+
+    textarea {
+        width: 90%;
+      }
+      
+      input {
+        width: 95%;
+      }
+    
+}
